@@ -66,8 +66,9 @@ function showAssignButton(){
 function assignNumberAndSymbol(button){
    let value = button.getAttribute('data-operate')
    let oldValue = screenTop.innerHTML.split('')
+   /* FIXME handling zero number first */
    if (oldValue[oldValue.length - 2] == 0) {
-      
+      // oldValue
    }
    screenTop.innerHTML = oldValue.join('') + value
    valueInArray = screenTop.innerHTML.split('')
